@@ -1,0 +1,243 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Responsive Page</title>
+    <link rel="stylesheet" href="./style.css">
+
+<style>
+
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@400;500;700&display=swap');
+
+*{
+    margin:0;
+    padding:0;
+    box-sizing:border-box;
+    font-family:'Roboto',sans-serif;
+}
+
+/* Page Layout */
+body{
+    background: linear-gradient(135deg, #2f035e, hsl(204, 52%, 70%), #1751b4);
+    display:flex;
+    flex-direction:column;
+    min-height:100vh;
+}
+
+/* Center Form Section */
+.section-wrapper{
+    flex:1;
+    display:flex;
+    justify-content:center;
+    align-items:center;
+    padding:40px 10px;
+}
+
+/* Glassmorphism Login Box */
+.login-container{
+    width:100%;
+    max-width:400px;
+    background:rgba(255,255,255,0.25);
+    padding:35px 30px;
+    border-radius:20px;
+    backdrop-filter:blur(12px);
+    box-shadow:0 4px 8px rgba(0,0,0,0.2),
+               inset 0 0 20px rgba(255,255,255,0.2);
+}
+
+.login-container h2{
+    text-align:center;
+    margin-bottom:20px;
+    font-size:28px;
+    font-weight:700;
+    color:#1a1a1a;
+}
+
+/* Input Group */
+.input-group{
+    margin-bottom:18px;
+    position:relative;
+}
+
+.input-group label{
+    font-weight:600;
+    color:#1a1a1a;
+    margin-bottom:6px;
+    display:block;
+}
+
+.input-group input{
+    width:100%;
+    padding:14px 45px 14px 15px;
+    border-radius:25px;
+    border:none;
+    outline:none;
+    background:rgba(255,255,255,0.35);
+    font-size:16px;
+    color:#1a1a1a;
+}
+
+.input-group .icon{
+    position:absolute;
+    right:15px;
+    top:55%;
+    transform:translateY(-50%);
+    font-size:18px;
+    color:#555;
+}
+
+/* Options */
+.options{
+    display:flex;
+    justify-content:space-between;
+    align-items:center;
+    margin-bottom:20px;
+}
+
+.options label{
+    display:flex;
+    align-items:center;
+    gap:6px;
+    cursor:pointer;
+    font-size:14px;
+}
+
+.options input[type="checkbox"]{
+    width:16px;
+    height:16px;
+}
+
+.options a{
+    font-weight:600;
+    color:#1a1a1a;
+}
+
+/* Buttons */
+.btn-box{
+    display:flex;
+    gap:12px;
+}
+
+.login-btn, .cancel-btn{
+    flex:1;
+    padding:14px 0;
+    border-radius:25px;
+    border:none;
+    font-size:16px;
+    font-weight:700;
+    cursor:pointer;
+}
+
+.login-btn{
+    background:#1a73e8;
+    color:#fff;
+}
+.cancel-btn{
+    background:rgba(255,255,255,0.35);
+    color:#1a1a1a;
+}
+
+/* Bottom */
+.bottom-text{
+    text-align:center;
+    margin-top:20px;
+    font-size:14px;
+}
+
+.bottom-text a{
+    color:#1a73e8;
+    font-weight:600;
+}
+
+/* RESPONSIVE */
+@media (max-width:600px){
+    .login-container{
+        padding:28px 20px;
+    }
+}
+
+</style>
+</head>
+<body>
+
+<!-- NAVBAR (Your Original Code Stays Same) -->
+<nav class="navbar">
+    <div class="logo">
+        <img src="./images/download.jpg" class="logo1">
+        My Website
+    </div>
+
+    <input type="checkbox" id="menu-toggle">
+
+    <label for="menu-toggle" class="menu-btn">
+        <span></span><span></span><span></span>
+    </label>
+
+    <ul class="nav-links">
+        <li><a href="./index.html">Home</a></li>
+        <li><a href="./about.html">About</a></li>
+        <li><a href="./contact.html">Contact</a></li>
+        <li><a href="./register.html">Register</a></li>
+        <li><a href="./login.html">Login</a></li>
+    </ul>
+</nav>
+
+<!-- FORM SECTION CENTERED RESPONSIVELY -->
+<div class="section-wrapper">
+<div class="login-container">
+
+    <h2>Login Form</h2>
+
+    <div class="input-group">
+        <label>User ID</label>
+        <input type="text" placeholder="User ID">
+        <span class="icon">&#128100;</span>
+    </div>
+
+    <div class="input-group">
+        <label>Password</label>
+        <input type="password" placeholder="Password">
+        <span class="icon">&#128274;</span>
+    </div>
+
+    <div class="options">
+        <label><input type="checkbox"> Remember Me</label>
+        <a href="#">Forgot Password?</a>
+    </div>
+
+    <div class="btn-box">
+        <button class="login-btn">Login</button>
+        <button class="cancel-btn" onclick="window.location.reload()">Cancel</button>
+    </div>
+
+    <div class="bottom-text">
+        Don't have an account? <a href="#">Register</a>
+    </div>
+
+</div>
+</div>
+
+<!-- FOOTER (unchanged) -->
+<footer>
+    <div class="footer-info">
+        <h2>Contact</h2>
+        <h4>+91 9651940506</h4>
+        <h4>xyz@gmail.com</h4>
+    </div>
+
+    <div class="footer-info">
+        <img src="./images/its-me.jpg" class="footer-image">
+        <h2>Developed By</h2>
+        <h4>SONAM SAHANI</h4>
+    </div>
+
+    <div class="footer-info">
+        <h2>Address</h2>
+        <h4>JS PVT ITI</h4>
+        <h4>Varanasi (UP)</h4>
+    </div>
+</footer>
+
+</body>
+</html>

@@ -1,0 +1,185 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Responsive Page</title>
+    <link rel="stylesheet" href="./style.css">
+
+<style>
+
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@400;500;700&display=swap');
+
+/* ---------------- BACKGROUND ---------------- */
+body {
+    margin: 0;
+    padding: 0;
+    font-family: 'Roboto', sans-serif;
+    background: linear-gradient(135deg, #6a11cb, #74c7ff, #2575fc);
+    background-size: 200% 200%;
+    animation: bgMove 10s ease infinite;
+}
+
+@keyframes bgMove {
+    0% { background-position: 0% 50%; }
+    50% { background-position: 100% 50%; }
+    100% { background-position: 0% 50%; }
+}
+
+
+
+
+
+
+/* ---------------- FORM SECTION ---------------- */
+.main {
+    width: 400px;
+    background: rgba(255,255,255,0.1);
+    padding: 40px 30px;
+    border-radius: 20px;
+    border: 2px solid rgba(255,255,255,0.4);
+    margin: 40px auto;
+    box-shadow: 0 0 25px rgba(0,0,0,0.35);
+}
+
+h3 {
+    text-align: center;
+    color: #003366;
+    margin-bottom: 25px;
+    font-size: 28px;
+}
+
+.inputbox {
+    margin: 18px 0;
+}
+
+label {
+    font-weight: 700;
+    color: #003366;
+}
+
+input[type="text"],
+input[type="email"],
+input[type="number"] {
+    width: 100%;
+    padding: 12px;
+    border-radius: 12px;
+    border: 1px solid rgba(0,0,0,0.3);
+    background: rgba(255,255,255,0.8);
+    font-size: 15px;
+}
+
+.btn-box {
+    display: flex;
+    justify-content: space-between;
+    margin-top: 25px;
+}
+
+.submit,
+.reset {
+    width: 48%;
+    padding: 14px;
+    border: none;
+    border-radius: 12px;
+    font-size: 16px;
+    cursor: pointer;
+}
+
+.submit { background: #007bff; color: #fff; }
+.submit:hover { background: #005fcc; }
+
+.reset { background: rgba(0,0,0,0.2); color: white; }
+.reset:hover { background: rgba(0,0,0,0.35); }
+
+/* FORM RESPONSIVE */
+@media (max-width: 480px) {
+    .main {
+        width: 90%;
+        padding: 30px 20px;
+    }
+}
+
+
+</style>
+</head>
+<body>
+
+<!-- NAVBAR -->
+<nav class="navbar">
+    <div class="logo">
+        <img src="./images/download.jpg" class="logo1">
+        My Website
+    </div>
+
+    <input type="checkbox" id="menu-toggle">
+
+    <label for="menu-toggle" class="menu-btn">
+        <span></span>
+        <span></span>
+        <span></span>
+    </label>
+
+    <ul class="nav-links">
+        <li><a href="./index.html">Home</a></li>
+        <li><a href="./about.html">About</a></li>
+        <li><a href="./contact.html">Contact</a></li>
+        <li><a href="./register.html">Register</a></li>
+        <li><a href="./login.html">Login</a></li>
+    </ul>
+</nav>
+
+<!-- FORM SECTION -->
+<div class="main">
+<form>
+    <h3>STUDENT FORM</h3>
+
+    <div class="inputbox">
+        <label>Name</label>
+        <input type="text" placeholder="Enter your name">
+    </div>
+
+    <div class="inputbox">
+        <label>Father Name</label>
+        <input type="text" placeholder="Enter father name">
+    </div>
+
+    <div class="inputbox">
+        <label>Email</label>
+        <input type="email" placeholder="Enter your email">
+    </div>
+
+    <div class="inputbox">
+        <label>Mobile No</label>
+        <input type="number" placeholder="Enter mobile number">
+    </div>
+
+    <div class="btn-box">
+        <input type="submit" value="Submit" class="submit">
+        <input type="reset" value="Reset" class="reset">
+    </div>
+</form>
+</div>
+
+<!-- FOOTER -->
+<footer>
+    <div class="footer-info">
+        <h2>Contact</h2>
+        <h4>+91 9651940506</h4>
+        <h4>xyz@gmail.com</h4>
+    </div>
+
+    <div class="footer-info">
+        <img src="./images/its-me.jpg" class="footer-image">
+        <h2>Developed By</h2>
+        <h4>SONAM SAHANI</h4>
+    </div>
+
+    <div class="footer-info">
+        <h2>Address</h2>
+        <h4>JS PVT ITI</h4>
+        <h4>Varanasi (UP)</h4>
+    </div>
+</footer>
+
+</body>
+</html>

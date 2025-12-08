@@ -1,0 +1,230 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>No-JS Responsive Navbar & Footer</title>
+    <link rel="stylesheet" href="./style.css">
+
+    <style>
+
+       
+
+        .about-section{
+            padding: 60px 20px;
+            text-align: center;
+        }
+        .about-section h1{
+            font-size: 40px;
+            margin-bottom: 10px;
+        }
+        .about-section p{
+            max-width: 900px;
+            margin: 10px auto;
+            font-size: 18px;
+            line-height: 1.7;
+        }
+        .container{
+            max-width: 1100px;
+            margin: auto;
+            padding: 40px 20px;
+        }
+        .heading{
+            color: #333;
+            margin-top: 40px;
+            border-left: 5px solid #0099ff;
+            padding-left: 10px;
+        }
+        ul{
+            padding-left: 20px;
+            font-size: 17px;
+            line-height: 1.7;
+        }
+        .about-box{
+            background-color: white;
+            padding: 25px;
+            border-radius: 20px;
+            margin: 20px 0;
+            box-shadow: 0 0 25px rgba(0, 0, 0, 0.15);
+        }
+        .courses-box{
+            display: flex;
+            gap: 20px;
+            flex-wrap: wrap;
+        }
+        .courses-box div{
+            background-color: #fff;
+            flex: 1 1 300px;
+            padding: 20px;
+            border: 20px;
+            border-radius: 15px;
+            box-shadow: 0 0 20px rgba(0, 0, 0, 0.15);
+            margin: 20px;
+        }
+        .footer-line{
+            height: 4px;
+            background: #0099ff;
+            width: 300px;
+            margin: 40px auto 0;
+        }
+        
+
+    </style>
+</head>
+<body>
+
+    <!-- ======== NAVBAR ======== -->
+    <nav class="navbar">
+
+        <div class="logo">
+            <img src="./images/download.jpg" class="logo1">
+            My Website
+        </div>
+
+        <input type="checkbox" id="menu-toggle">
+
+        <label for="menu-toggle" class="menu-btn">
+            <span></span>
+            <span></span>
+            <span></span>
+        </label>
+
+        <ul class="nav-links">
+            <li><a href="./index.html">Home</a></li>
+            <li><a href="./about.html">About</a></li>
+            <li><a href="./contact.html">Contact</a></li>
+            <li><a href="./register.html">Register</a></li>
+            <li><a href="./login.html">Login</a></li>
+        </ul>
+
+    </nav>
+
+    <!-- about section -->
+          <div class="about-section">
+            <h1>About JS Pvt. Industrial Training Institute, Palhipatti, Varanasi (U.P.)</h1>
+            <P>JS Pvt. Industrial Training Institute,
+                 located in Palhipatti, Varanasi,
+                  is a recognized private vocational 
+                  training institute established in 
+                  2007. The institute is affiliated
+                   to NCVT (National Council for
+                    Vocational Training) and functions
+                     under the guidelines of the Directorate
+                      General of Training (DGT), Government of India.
+
+The institute aims to provide high-quality technical 
+and skill-based education that prepares students for
+ employment in various industrial sectors.
+
+            </P>
+          </div>
+
+          <div class="container">
+            <div class="about-box">
+                <h2 class="heading">Our Mission</h2>
+                <ul> 
+                    <li>To provide excellent vocational education & industrial training</li>
+                <li>To prepare students for government and private sector jobs</li>
+                <li>To promote skill development and self-employment</li>
+                <li>To develop professionally trained manpower for industries</li>
+                </ul>
+            </div>
+            <div class="about-box">
+                <h2 class="heading">Why Choose JS ITI</h2>
+                <ul> 
+                     <li>Experienced and qualified trainers</li>
+                <li>Practical and industry-oriented training</li>
+                <li>Well-equipped labs and computer classrooms</li>
+                <li>Personality development and soft skills training</li>
+                <li>Placement assistance and career guidance</li>
+                </ul>
+            </div>
+         
+
+            <!-- course -->
+             <h2>Courses Offered</h2>
+             <div class="courses-box">
+                <div>
+                    <h3>COPA (Computer Operator & Programming Assistent)</h3>                                             
+                    <ul>
+                        <li>Basic of computer & MS Office</li>
+                        <li>Web desiging ( HTML, CSS)</li>
+                       <li>Networking fundamentals</li>
+                       <li>Internet & Email</li>
+                    </ul>
+                </div>
+
+
+
+                 <div>
+                    <h3>Electrician</h3>
+                    <ul>
+                       <li>Electrical wiring & installation</li>
+                    <li>Motors and transformers</li>
+                    <li>Safety & measuring instruments</li>
+                    <li>Commercial & residential electrical work</li>
+                    </ul>
+                </div>
+        
+             </div>
+   <div class="courses-box">
+                <div>
+                    <h3>Fitter</h3>
+                    <ul>
+                        <li>Workshop safety and use of hand tools</li>
+  <li>Fitting operations like filing, cutting, shaping, drilling, tapping, assembling metal parts</li>
+  <li>Operating workshop machines (lathe, drilling, grinding)</li>
+  <li>Sheet metal and pipe fitting</li>
+  <li>Basic welding and metal joining techniques</li>
+  <li>Mechanical assembly and maintenance of machines</li>
+  <li>Measuring and checking components for accuracy</li>
+  <li>Employability skills like teamwork, discipline, and industrial ethics</li>
+                    </ul>
+                </div>
+
+
+
+                 <div>
+                    <h3>FDT</h3>
+                    <ul>
+                       <li>Basics of fashion, fabrics, colors, and garment types</li>
+  <li>Garment construction: cutting, stitching, sewing, finishing</li>
+  <li>Pattern making and draping techniques</li>
+  <li>Embroidery and decorative work on fabrics</li>
+  <li>Fashion illustration and design sketches</li>
+  <li>Basic use of computer-aided design (CAD) in fashion</li>
+  <li>Employability skills: presentation, teamwork, and professionalism</li>
+                    </ul>
+                </div>
+        
+             </div>
+
+            <div class="footer-line"></div>
+
+          </div>
+<!-- ======== FOOTER ======== -->
+    <footer>
+
+        <div class="footer-info">
+            <h2>Contact</h2>
+            <h4>+91 9651940506</h4>
+            <h4>xyz@gmail.com</h4>
+        </div>
+
+        <div class="footer-info">
+            <img src="./images/its-me.jpg" class="footer-image">
+            <h2>Developed By</h2>
+            <h4>SONAM SAHANI</h4>
+        </div>
+
+        <div class="footer-info">
+            <h2>Address</h2>
+            <h4>JS PVT ITI</h4>
+            <h4>Varanasi (UP)</h4>
+        </div>
+
+    </footer>
+   
+
+</body>
+</html>
