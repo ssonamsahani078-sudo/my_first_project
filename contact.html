@@ -1,0 +1,194 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>No-JS Responsive Navbar & Footer</title>
+    <link rel="stylesheet" href="./style.css">
+
+    <style>
+
+  @import url('https://fonts.googleapis.com/css2?family=Roboto:wght@400;500;700&display=swap');
+
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+    font-family: 'Roboto', sans-serif;
+}
+
+/* Body background */
+body, html {
+    min-height: 100%;
+    background: linear-gradient(135deg, #99edf5 0%, #669ce7 100%);
+}
+
+/* ================= CONTACT BOX ================= */
+.contact-container {
+    background: rgba(255 255 255 / 0.25);
+    backdrop-filter: blur(12px);
+    border-radius: 20px;
+    box-shadow: 0 8px 22px rgba(0,0,0,0.25);
+    padding: 40px 35px;
+    width: 100%;
+    max-width: 450px;
+    margin: 120px auto 150px; /* Center + avoid footer overlap */
+}
+
+/* Heading */
+.contact-container h2 {
+    text-align: center;
+    font-size: 28px;
+    font-weight: 700;
+    margin-bottom: 25px;
+}
+
+/* Input Group */
+.input-group {
+    display: flex;
+    flex-direction: column;
+    margin-bottom: 20px;
+}
+
+.input-group label {
+    margin-bottom: 6px;
+    font-weight: 600;
+    color: #111;
+}
+
+.input-group input,
+.input-group textarea {
+    padding: 12px 15px;
+    border-radius: 25px;
+    border: none;
+    outline: none;
+    font-size: 15px;
+    background: rgba(255 255 255 / 0.4);
+    color: black;
+    box-shadow: inset 0 2px 5px rgba(0,0,0,0.1);
+}
+
+/* Placeholder */
+.input-group input::placeholder,
+.input-group textarea::placeholder {
+    color: rgba(0,0,0,0.6);
+}
+
+.input-group textarea {
+    resize: vertical;
+    min-height: 100px;
+}
+
+/* Button */
+.send-btn {
+    width: 100%;
+    padding: 14px 0;
+    border-radius: 25px;
+    border: none;
+    font-weight: 700;
+    font-size: 16px;
+    cursor: pointer;
+    background: #1a73e8;
+    color: white;
+}
+
+.send-btn:hover {
+    background: #1669c1;
+}
+
+/* Mobile Responsive */
+@media (max-width: 480px) {
+    .contact-container {
+        margin: 100px 20px 160px;
+        padding: 30px 20px;
+    }
+}
+
+</style>
+</head>
+<body>
+
+<!-- ============= NAVBAR ============= -->
+<nav class="navbar">
+
+    <div class="logo">
+        <img src="./images/download.jpg" class="logo1">
+        My Website
+    </div>
+
+    <input type="checkbox" id="menu-toggle">
+
+    <label for="menu-toggle" class="menu-btn">
+        <span></span>
+        <span></span>
+        <span></span>
+    </label>
+
+    <ul class="nav-links">
+        <li><a href="#">Home</a></li>
+        <li><a href="./about.html">About</a></li>
+        <li><a href="./contact.html">Contact</a></li>
+        <li><a href="./register.html">Register</a></li>
+        <li><a href="./login.html">Login</a></li>
+    </ul>
+
+</nav>
+
+
+
+<!-- ============= CONTACT FORM ============= -->
+<div class="contact-container">
+    <h2>Contact Us</h2>
+
+    <form>
+        <div class="input-group">
+            <label>Name</label>
+            <input type="text" placeholder="Your Name">
+        </div>
+
+        <div class="input-group">
+            <label>Email</label>
+            <input type="email" placeholder="Your Email">
+        </div>
+
+        <div class="input-group">
+            <label>Mobile Number</label>
+            <input type="text" placeholder="Your Mobile Number">
+        </div>
+
+        <div class="input-group">
+            <label>Message</label>
+            <textarea placeholder="Write your message..."></textarea>
+        </div>
+
+        <button type="submit" class="send-btn">Send</button>
+    </form>
+</div>
+
+
+
+<!-- ============= FOOTER ============= -->
+<footer>
+
+    <div class="footer-info">
+        <h2>Contact</h2>
+        <h4>+91 9651940506</h4>
+        <h4>xyz@gmail.com</h4>
+    </div>
+
+    <div class="footer-info">
+        <img src="./images/its-me.jpg" class="footer-image">
+        <h2>Developed By</h2>
+        <h4>SONAM SAHANI</h4>
+    </div>
+
+    <div class="footer-info">
+        <h2>Address</h2>
+        <h4>JS PVT ITI</h4>
+        <h4>Varanasi (UP)</h4>
+    </div>
+
+</footer>
+
+</body>
+</html>
